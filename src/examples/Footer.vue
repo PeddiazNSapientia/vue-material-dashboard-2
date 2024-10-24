@@ -8,15 +8,15 @@
             :class="$store.state.isRTL ? 'text-lg-end' : 'text-lg-start'"
           >
             ©
-            {{ new Date().getFullYear() }}, made with
-            <i class="fa fa-heart"></i> by
+            {{ new Date().getFullYear() }}, Hecho
+            <!-- <i class="fa fa-heart"></i> by --> por
             <a
-              href="https://www.creative-tim.com"
+              href="https://sapientia.odoo.com"
               class="font-weight-bold"
               target="_blank"
-              >Creative Tim</a
+              >SAPIENTIA SPA</a
             >
-            for a better web.
+            por una mejor web.
           </div>
         </div>
         <div class="col-lg-6">
@@ -25,13 +25,13 @@
           >
             <li class="nav-item">
               <a
-                href="https://www.creative-tim.com"
+                href="https://sapientia.odoo.com"
                 class="nav-link text-muted"
                 target="_blank"
-                >Creative Tim</a
+                >SAPIENTIA SPA</a
               >
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a
                 href="https://www.creative-tim.com/presentation"
                 class="nav-link text-muted"
@@ -54,7 +54,7 @@
                 target="_blank"
                 >License</a
               >
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>

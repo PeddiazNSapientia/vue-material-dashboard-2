@@ -17,10 +17,10 @@
           class="pe-md-3 d-flex align-items-center"
           :class="isRTL ? 'me-md-auto' : 'ms-md-auto'"
         >
-          <material-input id="search" label="Search here" />
+          <!-- <material-input id="search" label="Search here" /> -->
         </div>
         <ul class="navbar-nav justify-content-end">
-          <li class="nav-item d-flex align-items-center">
+          <!-- <li class="nav-item d-flex align-items-center">
             <router-link
               :to="{ name: 'SignIn' }"
               class="px-0 nav-link font-weight-bold lh-1"
@@ -30,7 +30,7 @@
                 account_circle
               </i>
             </router-link>
-          </li>
+          </li> -->
           <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
             <a
               href="#"
@@ -56,7 +56,7 @@
               </i>
             </a>
           </li>
-          <li
+          <!-- <li
             class="nav-item dropdown d-flex align-items-center"
             :class="isRTL ? 'ps-2' : 'pe-2'"
           >
@@ -178,14 +178,14 @@
                 </a>
               </li>
             </ul>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
   </nav>
 </template>
 <script>
-import MaterialInput from "@/components/MaterialInput.vue";
+// import MaterialInput from "@/components/MaterialInput.vue";
 import Breadcrumbs from "../Breadcrumbs.vue";
 import { mapMutations, mapState } from "vuex";
 
@@ -209,7 +209,7 @@ export default {
   },
   components: {
     Breadcrumbs,
-    MaterialInput,
+    // MaterialInput,
   },
   computed: {
     ...mapState(["isRTL", "isAbsolute"]),

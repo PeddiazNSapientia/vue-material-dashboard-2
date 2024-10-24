@@ -9,8 +9,8 @@
     <div class="shadow-lg card">
       <div class="pt-3 pb-0 bg-transparent card-header">
         <div class="float-start">
-          <h5 class="mt-3 mb-0">Material UI Configurator</h5>
-          <p>See our dashboard options.</p>
+          <h5 class="mt-3 mb-0">Configuración</h5>
+          <p>Personaliza el aspecto de la aplicación.</p>
         </div>
         <div class="mt-4 float-end" @click="toggle">
           <button class="p-0 btn btn-link text-dark fixed-plugin-close-button">
@@ -23,7 +23,7 @@
       <div class="pt-0 card-body pt-sm-3">
         <!-- Sidebar Backgrounds -->
         <div>
-          <h6 class="mb-0">Sidebar Colors</h6>
+          <h6 class="mb-0">Colores del Menú Lateral</h6>
         </div>
         <a href="#" class="switch-trigger background-color">
           <div
@@ -64,8 +64,8 @@
         </a>
         <!-- Sidenav Type -->
         <div class="mt-3">
-          <h6 class="mb-0">Sidenav Type</h6>
-          <p class="text-sm">Choose between 2 different sidenav types.</p>
+          <h6 class="mb-0">Tipo de Menú Lateral</h6>
+          <p class="text-sm">Escoge entre 2 tipos de menú lateral.</p>
         </div>
         <div class="d-flex">
           <button
@@ -74,7 +74,7 @@
             :class="sidebarType === 'bg-gradient-dark' ? 'active' : ''"
             @click="sidebar('bg-gradient-dark')"
           >
-            Dark
+            Oscuro
           </button>
           <button
             id="btn-transparent"
@@ -82,7 +82,7 @@
             :class="sidebarType === 'bg-transparent' ? 'active' : ''"
             @click="sidebar('bg-transparent')"
           >
-            Transparent
+            Transparente
           </button>
           <button
             id="btn-white"
@@ -90,17 +90,17 @@
             :class="sidebarType === 'bg-white' ? 'active' : ''"
             @click="sidebar('bg-white')"
           >
-            White
+            Blanco
           </button>
         </div>
         <p class="text-sm d-xl-none d-block mt-2">
-          You can change the sidenav type just on desktop view.
+          Puedes cambiar el tipo de  barra lateral en la aplicación.
         </p>
 
         <!-- Navbar Fixed -->
         <hr class="horizontal dark my-3" />
         <div class="mt-2 d-flex">
-          <h6 class="mb-0">Light / Dark</h6>
+          <h6 class="mb-0">Tema Claro / Oscuro</h6>
           <div class="form-check form-switch ps-0 ms-auto my-auto">
             <input
               class="form-check-input mt-1 ms-auto"
@@ -110,7 +110,7 @@
             />
           </div>
         </div>
-        <hr class="horizontal dark my-sm-4" />
+        <!-- <hr class="horizontal dark my-sm-4" />
 
         <a
           class="btn btn-outline-dark w-100"
@@ -132,8 +132,8 @@
             target="_blank"
           >
             <i class="fab fa-facebook-square me-1" aria-hidden="true"></i> Share
-          </a>
-        </div>
+          </a> -->
+        <!-- </div> -->
       </div>
     </div>
   </div>
@@ -204,3 +204,8 @@ export default {
   },
 };
 </script>
+<style>
+.fixed-plugin .btn.bg-gradient-dark:not(:disabled):not(.disabled){
+  font-size: 11px ;
+}
+</style>
