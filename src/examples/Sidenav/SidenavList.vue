@@ -30,7 +30,7 @@
           </template>
         </sidenav-collapse>
       </li>
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <sidenav-collapse
           url="#"
           :aria-controls="''"
@@ -42,8 +42,8 @@
             <i class="material-icons-round opacity-10 fs-5">receipt_long</i>
           </template>
         </sidenav-collapse>
-      </li>
-      <li class="nav-item">
+      </li> -->
+      <!-- <li class="nav-item">
         <sidenav-collapse
           url="#"
           :aria-controls="''"
@@ -57,8 +57,8 @@
             >
           </template>
         </sidenav-collapse>
-      </li>
-      <li class="nav-item">
+      </li> -->
+      <!-- <li class="nav-item">
         <sidenav-collapse
           url="#"
           :aria-controls="''"
@@ -70,8 +70,8 @@
             <i class="material-icons-round opacity-10 fs-5">notifications</i>
           </template>
         </sidenav-collapse>
-      </li>
-      <li class="mt-3 nav-item">
+      </li> -->
+      <!-- <li class="mt-3 nav-item">
         <h6
           class="text-xs ps-4 text-uppercase font-weight-bolder text-white"
           :class="$store.state.isRTL ? 'me-4' : 'ms-2'"
@@ -104,8 +104,8 @@
             <i class="material-icons-round opacity-10 fs-5">login</i>
           </template>
         </sidenav-collapse>
-      </li>
-      <li class="nav-item">
+      </li> -->
+      <!-- <li class="nav-item">
         <sidenav-collapse
           url="#"
           :aria-controls="''"
@@ -117,7 +117,7 @@
             <i class="material-icons-round opacity-10 fs-5">assignment</i>
           </template>
         </sidenav-collapse>
-      </li>
+      </li> -->
     </ul>
     <div class="sidenav-footer position-absolute w-100 bottom-0">
       <div class="mx-3">
@@ -125,7 +125,7 @@
           class="btn mt-4 w-100"
           :class="`bg-gradient-${this.$store.state.color}`"
           href="https://www.creative-tim.com/product/vue-material-dashboard-2-pro"
-          >Upgrade to pro</a
+          >Reporta un Problema</a
         >
       </div>
     </div>

@@ -1,5 +1,5 @@
 <template>
-  <navbar btnBackground="bg-gradient-success" />
+  <!-- <navbar btnBackground="bg-gradient-success" /> -->
   <div
     class="page-header align-items-start min-vh-100"
     style="
@@ -16,9 +16,9 @@
                 class="bg-gradient-success shadow-success border-radius-lg py-3 pe-1"
               >
                 <h4 class="text-white font-weight-bolder text-center mt-2 mb-0">
-                  Sign in
+                  Ingresar
                 </h4>
-                <div class="row mt-3">
+                <!-- <div class="row mt-3">
                   <div class="col-2 text-center ms-auto">
                     <a class="btn btn-link px-3" href="javascript:;">
                       <i class="fab fa-facebook text-white text-lg"></i>
@@ -34,7 +34,7 @@
                       <i class="fab fa-google text-white text-lg"></i>
                     </a>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
             <div class="card-body">
@@ -43,7 +43,7 @@
                   <material-input
                     id="email"
                     type="email"
-                    label="Email"
+                    label="Usuario SAP Business One"
                     name="email"
                   />
                 </div>
@@ -51,30 +51,30 @@
                   <material-input
                     id="password"
                     type="password"
-                    label="Password"
+                    label="Contraseña"
                     name="password"
                   />
                 </div>
-                <material-switch id="rememberMe" name="rememberMe"
+               <!--  <material-switch id="rememberMe" name="rememberMe"
                   >Remember me</material-switch
-                >
+                > -->
                 <div class="text-center">
                   <material-button
                     class="my-4 mb-2"
                     variant="gradient"
                     color="success"
                     fullWidth
-                    >Sign in</material-button
+                    >Ingresar</material-button
                   >
                 </div>
-                <p class="mt-4 text-sm text-center">
+                <!-- <p class="mt-4 text-sm text-center">
                   Don't have an account?
                   <router-link
                     :to="{ name: 'SignUp' }"
                     class="text-success text-gradient font-weight-bold"
                     >Sign up</router-link
                   >
-                </p>
+                </p> -->
               </form>
             </div>
           </div>
@@ -86,15 +86,15 @@
         <div class="row align-items-center justify-content-lg-between">
           <div class="col-12 col-md-6 my-auto">
             <div class="copyright text-center text-sm text-white text-lg-start">
-              © {{ new Date().getFullYear() }}, made with
-              <i class="fa fa-heart" aria-hidden="true"></i> by
+              © {{ new Date().getFullYear() }}, Powered
+              <!-- <i class="fa fa-heart" aria-hidden="true"></i>  -->by
               <a
-                href="https://www.creative-tim.com"
+                href="https://sapientia.odoo.com/"
                 class="font-weight-bold text-white"
                 target="_blank"
-                >Creative Tim</a
+                >SAPIENTIA SPA</a
               >
-              for a better web.
+              <!-- for a better web. -->
             </div>
           </div>
           <div class="col-12 col-md-6">
@@ -103,36 +103,36 @@
             >
               <li class="nav-item">
                 <a
-                  href="https://www.creative-tim.com"
+                  href="https://sapientia.odoo.com/"
                   class="nav-link text-white"
                   target="_blank"
-                  >Creative Tim</a
+                  >Sitio web Sapientia</a
                 >
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a
                   href="https://www.creative-tim.com/presentation"
                   class="nav-link text-white"
                   target="_blank"
                   >About Us</a
                 >
-              </li>
-              <li class="nav-item">
+              </li> -->
+              <!-- <li class="nav-item">
                 <a
                   href="https://www.creative-tim.com/blog"
                   class="nav-link text-white"
                   target="_blank"
                   >Blog</a
                 >
-              </li>
-              <li class="nav-item">
+              </li> -->
+              <!-- <li class="nav-item">
                 <a
                   href="https://www.creative-tim.com/license"
                   class="nav-link pe-0 text-white"
                   target="_blank"
                   >License</a
                 >
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
@@ -142,18 +142,17 @@
 </template>
 
 <script>
-import Navbar from "@/examples/PageLayout/Navbar.vue";
+
 import MaterialInput from "@/components/MaterialInput.vue";
-import MaterialSwitch from "@/components/MaterialSwitch.vue";
+
 import MaterialButton from "@/components/MaterialButton.vue";
 import { mapMutations } from "vuex";
 
 export default {
   name: "sign-in",
   components: {
-    Navbar,
+    
     MaterialInput,
-    MaterialSwitch,
     MaterialButton,
   },
   beforeMount() {
